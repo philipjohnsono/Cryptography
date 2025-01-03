@@ -1,46 +1,55 @@
 # Hybrid Cryptographic Algorithm with Statistical Analysis
 
-This repository contains the implementation and evaluation of a hybrid cryptographic algorithm. The algorithm integrates multiple classical ciphers to enhance encryption strength and protect sensitive information from cryptanalytic techniques. Statistical analysis tools are included to evaluate and validate the algorithm's effectiveness.
+This repository demonstrates the development and evaluation of a hybrid cryptographic algorithm. The algorithm integrates multiple classical ciphers to enhance encryption strength and protect sensitive data from cryptanalytic attacks. The hybrid approach leverages the Vigenère Cipher, Columnar Transposition Cipher, Affine Cipher, Rail Fence Cipher, and Playfair Cipher, applying them sequentially to create a robust encryption method.
 
 ---
 
-## Overview
+## What This Repository Includes
 
-The hybrid cryptographic algorithm combines five classical ciphers:
-- **Vigenère Cipher:** A polyalphabetic substitution cipher using a key to shift characters.
-- **Columnar Transposition Cipher:** A transposition cipher rearranging plaintext based on a key.
-- **Affine Cipher:** A substitution cipher employing mathematical transformations for encryption.
-- **Rail Fence Cipher:** A transposition cipher organising text into a zigzag pattern.
-- **Playfair Cipher:** A digraph substitution cipher encrypting pairs of letters.
+1. **Hybrid Cryptographic Algorithm:**
+   - Combines five classical ciphers into a single encryption function.
+   - Sequentially applies substitution and transposition techniques to maximise encryption security.
 
-The combined hybrid approach leverages the strengths of these individual ciphers to produce a robust encryption algorithm resistant to common cryptanalytic attacks.
+2. **Statistical Analysis Tools:**
+   - **Frequency Analysis:** Compares character distributions in plaintext and ciphertext.
+   - **Chi-Square Test:** Measures deviations from expected frequency patterns in ciphertext.
+   - **Entropy Calculation:** Evaluates randomness and unpredictability in ciphertext.
+   - **Index of Coincidence (IC):** Analyses uniformity in character distributions to assess encryption strength.
 
----
-
-## Features
-
-- **Multi-layered Encryption:** Integrates five classical ciphers into a single encryption function.
-- **Statistical Evaluation:** Includes tools for frequency analysis, chi-square testing, entropy calculation, and Index of Coincidence (IC).
-- **Visualisation Capabilities:** Generates comparative graphs for plaintext and ciphertext frequency distributions, entropy, and IC values.
+3. **Visualisation:**
+   - Frequency distribution charts for plaintext vs ciphertext.
+   - Graphs and tables displaying statistical metrics such as entropy and IC.
 
 ---
 
-## Requirements
+## Key Highlights
 
-Ensure the following are installed:
-- Python 3.x
-- Jupyter Notebook (if using the notebook files)
-- Libraries:
-  - `matplotlib`: For creating visualisations.
-  - `pandas`: For organising and analysing data.
-  - `numpy`: For numerical operations.
-  - `scipy`: For statistical calculations.
+### Encryption Process:
+- The hybrid cryptographic function encrypts plaintext by combining the following ciphers:
+  - Vigenère Cipher
+  - Columnar Transposition Cipher
+  - Affine Cipher
+  - Rail Fence Cipher
+  - Playfair Cipher
+- A sample dataset (a 500-word cover letter) is used to demonstrate the encryption process and subsequent analysis.
+
+### Statistical Evaluation:
+- **Frequency Analysis:** Reveals disrupted natural language patterns in ciphertext.
+- **Chi-Square Test:** Confirms significant deviations from natural letter frequencies.
+- **Entropy Calculation:** Indicates increased randomness in ciphertext.
+- **Index of Coincidence (IC):** Shows improved uniformity and reduced predictability in ciphertext distributions.
 
 ---
 
-## Installation
+## Example Results
 
-1. Clone the Repository:
-   ```bash
-   git clone https://github.com/your-username/your-repository-name.git
-   cd your-repository-name
+- **Plaintext Entropy:** 4.18
+- **Ciphertext Entropy:** 4.52
+- **Plaintext IC:** 0.055
+- **Ciphertext IC:** 0.038
+
+These results demonstrate the effectiveness of the hybrid algorithm in increasing randomness and reducing the predictability of the encrypted text, making it more resistant to cryptanalytic attacks.
+
+---
+
+Explore the Jupyter notebooks and Python scripts provided in this repository to learn more about the encryption process, perform your own statistical analyses, and visualise the results. This project serves as a comprehensive guide for implementing and evaluating a hybrid cryptographic algorithm.
