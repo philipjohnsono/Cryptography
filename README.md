@@ -1,44 +1,46 @@
-# Hybrid Cryptographic Algorithm and Statistical Analysis
+# Hybrid Cryptographic Algorithm with Statistical Analysis
 
-This repository contains the implementation and analysis of a hybrid cryptographic algorithm developed for my thesis. The algorithm combines multiple classical ciphers to enhance security and resist common cryptanalytic techniques. Statistical analyses were performed to evaluate the strength of the encryption.
+This repository contains the implementation and evaluation of a hybrid cryptographic algorithm. The algorithm integrates multiple classical ciphers to enhance encryption strength and protect sensitive information from cryptanalytic techniques. Statistical analysis tools are included to evaluate and validate the algorithm's effectiveness.
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Features](#features)
-3. [Requirements](#requirements)
-4. [Usage](#usage)
-5. [Statistical Analysis](#statistical-analysis)
-6. [Contributing](#contributing)
-7. [License](#license)
+---
 
 ## Overview
 
-The hybrid cryptographic algorithm integrates the following classical ciphers:
-- **Vigenère Cipher**
-- **Columnar Transposition Cipher**
-- **Affine Cipher**
-- **Rail Fence Cipher**
-- **Playfair Cipher**
+The hybrid cryptographic algorithm combines five classical ciphers:
+- **Vigenère Cipher:** A polyalphabetic substitution cipher using a key to shift characters.
+- **Columnar Transposition Cipher:** A transposition cipher rearranging plaintext based on a key.
+- **Affine Cipher:** A substitution cipher employing mathematical transformations for encryption.
+- **Rail Fence Cipher:** A transposition cipher organising text into a zigzag pattern.
+- **Playfair Cipher:** A digraph substitution cipher encrypting pairs of letters.
 
-Statistical analyses, such as frequency analysis, chi-square testing, entropy calculation, and the Index of Coincidence (IC), are used to evaluate the ciphertext's strength.
+The combined hybrid approach leverages the strengths of these individual ciphers to produce a robust encryption algorithm resistant to common cryptanalytic attacks.
+
+---
 
 ## Features
 
-- Combines multiple classical ciphers for enhanced encryption.
-- Performs statistical analysis to measure encryption effectiveness.
-- Provides tools for visualising results (e.g., frequency distribution charts).
+- **Multi-layered Encryption:** Integrates five classical ciphers into a single encryption function.
+- **Statistical Evaluation:** Includes tools for frequency analysis, chi-square testing, entropy calculation, and Index of Coincidence (IC).
+- **Visualisation Capabilities:** Generates comparative graphs for plaintext and ciphertext frequency distributions, entropy, and IC values.
+
+---
 
 ## Requirements
 
-Ensure you have the following installed:
+Ensure the following are installed:
 - Python 3.x
-- Jupyter Notebook
-- Libraries: `matplotlib`, `pandas`, `numpy`, `scipy`
+- Jupyter Notebook (if using the notebook files)
+- Libraries:
+  - `matplotlib`: For creating visualisations.
+  - `pandas`: For organising and analysing data.
+  - `numpy`: For numerical operations.
+  - `scipy`: For statistical calculations.
 
-## Usage
+---
 
-1. Clone this repository:
+## Installation
+
+1. Clone the Repository:
    ```bash
    git clone https://github.com/your-username/your-repository-name.git
    cd your-repository-name
