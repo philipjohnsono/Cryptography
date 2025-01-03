@@ -49,7 +49,3 @@ This repository demonstrates the development and evaluation of a hybrid cryptogr
 - **Ciphertext IC:** 0.038
 
 These results demonstrate the effectiveness of the hybrid algorithm in increasing randomness and reducing the predictability of the encrypted text, making it more resistant to cryptanalytic attacks.
-
----
-
-Explore the Jupyter notebooks and Python scripts provided in this repository to learn more about the encryption process, perform your own statistical analyses, and visualise the results. This project serves as a comprehensive guide for implementing and evaluating a hybrid cryptographic algorithm.
